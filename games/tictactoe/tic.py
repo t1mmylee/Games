@@ -9,12 +9,12 @@ pygame.display.set_caption("TicTacToe")
 BG_COLOR = (194, 197, 204)
 GRAY = (194, 197, 204)
 
-FONT = pygame.font.Font("C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\Roboto-Regular.ttf", 100)
+FONT = pygame.font.Font("(loaction of asset->)\\tictactoe\\assets\\Roboto-Regular.ttf", 100)
 BUTTON_FONT = pygame.font.Font("C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\Roboto-Regular.ttf", 60)  # Bold font
 
-BOARD = pygame.image.load("C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\Board.png")
-X_IMG = pygame.image.load("C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\X.png")
-O_IMG = pygame.image.load("C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\O.png")
+BOARD = pygame.image.load("(loaction of asset->)\\tictactoe\\assets\\Board.png")
+X_IMG = pygame.image.load("(loaction of asset->)\\tictactoe\\assets\\X.png")
+O_IMG = pygame.image.load("(loaction of asset->)\\tictactoe\\assets\\O.png")
 
 board = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 graphical_board = [[[None, None], [None, None], [None, None]],
@@ -67,7 +67,7 @@ def check_win(board):
         if board[row][0] == board[row][1] == board[row][2] and board[row][0] is not None:
             winner = board[row][0]
             for i in range(3):
-                graphical_board[row][i][0] = pygame.image.load(f"C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\Winning {winner}.png")
+                graphical_board[row][i][0] = pygame.image.load(f"(loaction of asset->)\\tictactoe\\assets\\Winning {winner}.png")
                 SCREEN.blit(graphical_board[row][i][0], graphical_board[row][i][1])
             pygame.display.update()
             return winner
@@ -76,7 +76,7 @@ def check_win(board):
         if board[0][col] == board[1][col] == board[2][col] and board[0][col] is not None:
             winner = board[0][col]
             for i in range(3):
-                graphical_board[i][col][0] = pygame.image.load(f"C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\Winning {winner}.png")
+                graphical_board[i][col][0] = pygame.image.load(f"(loaction of asset->)\\tictactoe\\assets\\Winning {winner}.png")
                 SCREEN.blit(graphical_board[i][col][0], graphical_board[i][col][1])
             pygame.display.update()
             return winner
@@ -84,7 +84,7 @@ def check_win(board):
     if board[0][0] == board[1][1] == board[2][2] and board[0][0] is not None:
         winner = board[0][0]
         for i in range(3):
-            graphical_board[i][i][0] = pygame.image.load(f"C:\\Users\\carlo\\OneDrive\\Desktop\\tictactoe\\assets\\Winning {winner}.png")
+            graphical_board[i][i][0] = pygame.image.load(f"(loaction of asset->)\\OneDrive\\Desktop\\tictactoe\\assets\\Winning {winner}.png")
             SCREEN.blit(graphical_board[i][i][0], graphical_board[i][i][1])
         pygame.display.update()
         return winner
@@ -92,7 +92,7 @@ def check_win(board):
     if board[0][2] == board[1][1] == board[2][0] and board[0][2] is not None:
         winner = board[0][2]
         for i in range(3):
-            graphical_board[i][2 - i][0] = pygame.image.load(f"C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\tictactoe\\assets\\Winning {winner}.png")
+            graphical_board[i][2 - i][0] = pygame.image.load(f"(loaction of asset->)\\tictactoe\\assets\\Winning {winner}.png")
             SCREEN.blit(graphical_board[i][2 - i][0], graphical_board[i][2 - i][1])
         pygame.display.update()
         return winner
