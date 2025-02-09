@@ -39,17 +39,17 @@ RED_HIT = pygame.USEREVENT + 1
 
 # Load Images
 YELLOW_SPACESHIP_IMAGE = pygame.image.load(
-    os.path.join('C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\spaceship\\Assets\\spaceship_yellow.png'))
+    os.path.join('(loaction of asset->)\\spaceship\\Assets\\spaceship_yellow.png'))
 YELLOW_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(
     YELLOW_SPACESHIP_IMAGE, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 90)
 
 RED_SPACESHIP_IMAGE = pygame.image.load(
-    os.path.join('C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\spaceship\\Assets\\spaceship_red.png'))
+    os.path.join('(loaction of asset->)\\spaceship\\Assets\\spaceship_red.png'))
 RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(
     RED_SPACESHIP_IMAGE, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 270)
 
 SPACE = pygame.transform.scale(pygame.image.load(
-    os.path.join('C:\\Users\\carlo\\OneDrive\\Desktop\\Carlo Games\\spaceship\\Assets\\space.png')), (WIDTH, HEIGHT))
+    os.path.join('(loaction of asset->)\\spaceship\\Assets\\space.png')), (WIDTH, HEIGHT))
 
 # Cooldown Variables
 YELLOW_COOLDOWN = 0
